@@ -1,0 +1,14 @@
+apiVersion: skaffold/v2beta12
+kind: Config
+metadata:
+  name: customer-frontend
+build:
+  artifacts:
+  - image: customer-frontend
+    docker:
+      dockerfile: Dockerfile
+deploy:
+  kubectl:
+    manifests:
+    - k8/customer-frontend.deployment.yaml
+

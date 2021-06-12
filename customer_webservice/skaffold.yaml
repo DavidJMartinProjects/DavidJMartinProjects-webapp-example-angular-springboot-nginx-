@@ -1,0 +1,14 @@
+apiVersion: skaffold/v2beta12
+kind: Config
+metadata:
+  name: customer-webservice
+build:
+  artifacts:
+  - image: customer-service
+    docker:
+      dockerfile: Dockerfile
+deploy:
+  kubectl:
+    manifests:
+    - k8/customer-service.deployment.yaml
+    - k8/postgres-db-deployment.yaml
