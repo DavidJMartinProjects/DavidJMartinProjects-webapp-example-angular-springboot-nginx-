@@ -1,25 +1,51 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@2.0.7/css/boxicons.min.css">
 
+<nav class="navbar navbar-dark bg-dark navbar-expand-md bg-faded justify-content-center">
+    <a href="/" class="navbar-brand d-flex w-50 justify-content-left"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar3">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="navbar-collapse collapse w-100" id="collapsingNavbar3">
+        <ul class="navbar-nav w-100 justify-content-center">
+            <li class="nav-item">
+                <a class="navbar-brand mx-2 d-none d-md-inline" href="#">Angular Example</a>
+            </li>
+        </ul>
+        <ul class="nav navbar-nav ml-auto w-100 justify-content-right">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Github</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
 <div class="container">
-    <div class="row row-cols-1 row-cols-lg-2 row-cols-xl-4">
-        <div *ngFor="let customer of customers" class="col">
-            <div class="card radius-15 bg-primary">
-                <div class="card-body text-center">
-                    <div class="p-4 radius-15">
-                        <img src={{customer.image}} width="110" height="110" class="rounded-circle shadow p-1 bg-white" alt="">
-                        <h5 class="mb-0 mt-5 text-white">{{customer.firstName}} {{customer.lastName}}</h5>
-                        <p class="mb-3 text-white">{{customer.country}}</p>
-                        
-                        <div class="list-inline contacts-social mt-3 mb-3"> <a href="javascript:;" class="list-inline-item border-0"><i class="bx bxl-facebook"></i></a>
-                            <a href="javascript:;" class="list-inline-item border-0"><i class="bx bxl-twitter"></i></a>
-                            <a href="javascript:;" class="list-inline-item border-0"><i class="bx bxl-linkedin"></i></a>
-                        </div>
-                        <div class="d-grid"> <a href="#" class="btn btn-white radius-15">Contact Me</a>
-                        </div>
+    <div class="card main-card">
+        <div class="row row-cols-1 row-cols-lg-2 row-cols-xl-4">
+            <div *ngFor="let customer of customers" class="col">
+                <div class="card profile-card">
+                    <div class="card radius-15 bg-primary">
+                        <div class="card-body text-center">
+                            <div class="p-4 radius-15">
+                                <img src={{customer.image}} width="110" height="110"
+                                    class="rounded-circle shadow p-1 bg-white" alt="">
+                                <h5 class="mb-0 mt-5 text-white">{{customer.firstName}} {{customer.lastName}}</h5>
+                                <p class="mb-3 text-white">{{customer.country}}</p>
+                                <div class="list-inline contacts-social mt-3 mb-3"> <a href="javascript:;"
+                                        class="list-inline-item border-0"><i class="bx bxl-facebook"></i></a>
+                                    <a href="javascript:;" class="list-inline-item border-0"><i
+                                            class="bx bxl-twitter"></i></a>
+                                    <a href="javascript:;" class="list-inline-item border-0"><i
+                                            class="bx bxl-linkedin"></i></a>
+                                </div>
+                                <div class="d-grid"> <a href="#" class="btn btn-white radius-15">Contact Me</a>
+                                </div>
+                            </div>
+                        </div>                        
                     </div>                    
                 </div>
+                <span>&nbsp;</span>
             </div>
-            <span>&nbsp;</span>
         </div>
     </div>
 </div>

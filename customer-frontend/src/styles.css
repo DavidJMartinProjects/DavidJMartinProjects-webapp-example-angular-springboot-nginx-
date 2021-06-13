@@ -1,8 +1,6 @@
-
-
 body{
-    background-color: #f7f7ff;
-    margin-top:20px;
+    /* background-color: white;     */
+    /* background-color: silver; */
 }
 .btn-white {
     background-color: #fff;
@@ -26,7 +24,7 @@ body{
     background-color: #0dcaf0!important;
 }
 .bg-primary {
-    background-color: #008cff!important;
+    background-color: black!important;
 }
 .bg-danger {
     background-color: #fd3550!important;
@@ -34,7 +32,26 @@ body{
 .bg-warning {
     background-color: #ffc107!important;
 }
-
+@media (min-width: 768px) {
+    .navbar-brand.abs
+        {
+            position: absolute;
+            width: 100%;
+            left: 0;
+            text-align: center;
+        }
+    }
 .card {
-    padding-bottom: 1em;
+    padding: .5em;
+    margin: 1em;
+}
+
+.profile-card {
+    padding: .5em;
+    margin: 0em;
+}
+
+.main-card {
+    background-color: silver;
+    padding: 2em;
 }
